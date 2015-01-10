@@ -1,74 +1,95 @@
-html, body {
+body {
+    background: #DDDDDD;
     width: 100%;
     height: 100%;
-    margin: 0;
-    background: grey;
 }
 
 .container {
+    background: #FFFFFF;
     width: 70%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 10px;
-    background: white;
+    height: 900px;
+    padding: 20px;
+    margin: 10px auto;
     box-sizing: border-box;
 }
 
-.nav {
+.top {
     width: 100%;
-    height: 10%;
-    margin: 10px auto; /*can't center with float - use this instead*/
-    box-sizing: border-box;
+    height: 100px;
 }
 
 .box {
     width: 30%;
     height: 100%;
     float: left;
-    /* then calc exact value to centerflexbox makes this nonsense go away*/
-    margin: auto 1.5%;
 }
 
-.red {
-    background: #CD0D24;
+/*How do I make the margins same width as padding of container, but still center?*/
+.box.top__left {
+    margin: auto 2.5% auto 0;
 }
 
-.blue {
-    background: #4E92DF;
+.box.top__middle {
+    margin: auto 2.5%;
 }
 
-.black {
-    background: #4A4A4A;
-}
-
-article {
-    clear: both;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.content {
-    margin: auto 1.5%;
+.box.top__right {
+    margin: auto 0 auto 2.5%;
 }
 
 .middle {
     width: 100%;
-    height: 30%;
-    float: left;
+    height: 200px;
 }
 
-.first__inner {
+.spacer {
+    height: 15px;
+    width: 100%;
+}
+
+.middle__left {
     width: 30%;
     height: 100%;
     float: left;
 }
 
-.second__inner {
+.middle__right {
     width: 70%;
     height: 100%;
+    float: left;
+}
+
+.bottom {
+    width: 100%;
+    height: 150px;
+}
+
+.box-bottom {
+    height: 100%;
+}
+
+.box-bottom.bottom__first {
+    width: 100%;
+}
+
+.box-bottom.bottom__second {
+    width: 40%;
     float: right;
 }
 
-.footer {
-    width: 100%;
+.box-bottom.bottom__third {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.red {
+    background: #D0021B;
+}
+
+.blue {
+    background: #4A90E2;
+}
+
+.black {
+    background: #4A4A4A;
 }
