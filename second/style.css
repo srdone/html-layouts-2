@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #DDDDDD;
+    font-family: 'Helvetica' sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.container.outer {
+    height: 100%;
+    width: 70%;
+}
+    
+.container.top {
+    background: #FFF;
+    margin-bottom: 20px;
+}
+
+.container.bottom {
+    background: #FFF;
+}
+
+img.image-jumbo {
+    background: url(second.png); 
+    height: 400px;
+    width: 100%;
+}
+
+.button {
+    float: left;
+    height: 50px;
+    width: auto;
+    padding: 10px 25px;
+    color: #FFF;
+    font-size: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    line-height: 30px; /*vertically center the text in the button*/
+}
+
+.button.cancel {
+    background: #D0021B;
+}
+
+.button.accept {
+    background: #4A90E2;
+}
+
+/*prevent floated buttons from extending out of the enclosing div*/
+.clear {
+    clear: both;
+}
